@@ -1,0 +1,83 @@
+<view>
+  <view class='header'>
+     <view class='flex_col_center mark-inside'>
+      <text class='fa icon-star'></text>
+    </view>  
+    <view class='flex_col_center mark-outside'>
+      <text class='fa icon-star'></text>
+    </view> 
+    <view class='container flex_row'>
+       <view>
+        <view class='flex_col_start'>
+          <view class='cover-wrap_small'>
+            <view class="cover" style="width: 100%; height: 100%; background-image: url('{{cover}}');">
+              <block wx:if='{{rating !== ""}}'>
+                <view class="cover-info_small"> 
+                  <text class="rating">{{rating}}</text>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view style='padding-left: 48rpx;'>
+        <view class='flex_col'>
+          <text class='text_primary'>{{title}}</text>
+          <view>
+            <block wx:if='{{director !== ""}}'>
+              <text class='text_secondary'>导演：</text>
+              <text class='text_secondary'>{{director}}</text>
+            </block>
+          </view>
+          <view>
+            <block wx:if='{{year !== ""}}'>
+              <text class='text_secondary'>年份：</text>
+              <text class='text_secondary'>{{year}}</text>
+            </block>
+          </view>
+           <view>
+            <block wx:if='{{genre !== ""}}'>
+              <text class='text_secondary'>分类：</text>
+              <text class='text_secondary'>{{genre}}</text>
+            </block>
+          </view>
+           <view>
+            <block wx:if='{{runtime !== ""}}'>
+              <text class='text_secondary'>时长：</text>
+              <text class='text_secondary'>{{runtime}}</text>
+            </block>
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>
+  <scroll-view style='box-sizing: border-box; height: {{windowHeight}}px;' scroll-y='true'>
+    <view style='padding-top: 440rpx;'>
+      <view class='container'>
+        <text class='text-content'>{{summary}}</text> 
+      </view>
+      <view class='container'>
+        <block wx:for="{{playSource}}" wx:key="{{index}}">
+          <view wx:if='{{index < playSource.length - 1}}'>
+            <view class='border-bottom_dash text-content playsource'>
+              <view class='playsource-icon icon-{{item.id}}'></view>
+              <view class='flex_spacebetween'>
+                <text class='playsource-name'>{{playSourceName[item.id]}}</text>
+                <text class='price'>{{item.price}}</text>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class='text-content playsource'>
+              <view class='playsource-icon icon-{{item.id}}'></view>
+              <view class='flex_spacebetween '>
+                <text class='playsource-name'>{{playSourceName[item.id]}}</text>
+                <text class='price'>{{item.price}}</text>
+              </view>
+            </view>
+          </view>
+      </block>
+      </view>
+    </view>
+  </scroll-view>
+</view>

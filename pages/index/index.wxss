@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 42rpx;
+  margin-bottom: 70rpx;
+  font-size: 48rpx;
+}
+
+.button-prev {
+  position: relative;
+  left: -40rpx;
+}
+
+.button-next {
+  position: relative;
+  right: -40rpx;
+}
+
+.button_circle {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  color: #f2f2f2;
+  background-color: #ff9800;
+  border-radius: 80rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  text-align: center;
+}

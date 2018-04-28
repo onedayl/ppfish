@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/subject/subject",
+    "pages/mark/mark"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f0f3f5",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "片片鱼",
+    "backgroundTextStyle": "dark"
+  }
+}

@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="nav">
+    <text class="fa icon-star" bindtap='navToMark'></text>
+    <text class="fa icon-search" bindtap='navToMark'></text>
+    <text class="fa icon-bell-alt" bindtap='navToMark'></text>
+    <text class="fa icon-cog" bindtap='navToMark'></text>
+  </view>
+  <view class="flex_col_center" style="position: relative;">
+    <swiper class="cover-wrap_big" bindanimationfinish="handleAnimationFinish">
+      <block wx:for="{{movies}}" wx:key="{{index}}">
+        <swiper-item>
+          <view class="cover" style="width: 100%; height: 100%; background-image: url('{{item.cover}}');" data-id='{{item.id}}' bindtap='navToSubject'>
+            <view class="cover-mask"></view> 
+            <view class="cover-info_big"> 
+              <text class="title">{{item.title}}<text class="rating">{{item.rating}}</text></text>
+            </view> 
+          </view> 
+        </swiper-item>
+      </block>
+    </swiper>
+    <view style="margin-top: 42rpx;">
+      <text class="text_secondary">{{current < 10 ? '0' + current : current}}/{{moviesNum}}</text>
+    </view>
+  </view>
+</view>

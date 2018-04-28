@@ -1,0 +1,81 @@
+page {
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 440rpx;
+  background-color: #f0f3f5;
+  position: fixed;
+  z-index: 4;
+   box-sizing: border-box;
+  box-shadow: 0 60rpx 60rpx #ffffff; 
+}
+
+.mark-outside {
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  bottom: -40rpx;
+  z-index: 5;
+  color: #ff9800;
+  font-size: 2em;
+}
+
+ .mark-inside {
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  bottom: -40rpx;
+  z-index: 6;
+  color: #ffffff;
+  font-size: 1.4em;
+} 
+
+.playsource {
+  display: flex;
+  padding: 18rpx 0;
+  box-sizing: border-box;
+}
+
+.playsource-icon {
+  width: 64rpx;
+  height: 60rpx;
+  background-size: cover;
+}
+
+.icon-0 {
+  background-image: url('https://onedayl.com/playsource-0.png');
+}
+
+.icon-1 {
+  background-image: url('https://onedayl.com/playsource-1.png');
+}
+
+.icon-2 {
+  background-image: url('https://onedayl.com/playsource-2.png');
+}
+
+.icon-3 {
+  background-image: url('https://onedayl.com/playsource-3.png');
+}
+
+.icon-4 {
+  background-image: url('https://onedayl.com/playsource-4.png');
+}
+
+.icon-5 {
+  background-image: url('https://onedayl.com/playsource-5.png');
+}
+
+.icon-6 {
+  background-image: url('https://onedayl.com/playsource-6.png');
+}
+
+.icon-7 {
+  background-image: url('https://onedayl.com/playsource-7.png');
+}
+
+.playsource-name {
+  padding-left: 20rpx;
+}
