@@ -2,6 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/subject/subject",
+    "pages/search/search",
+    "pages/setting/setting",
+    "pages/auth/auth",
     "pages/mark/mark"
   ],
   "window": {

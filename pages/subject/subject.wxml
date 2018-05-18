@@ -21,12 +21,12 @@
         </view>
       </view>
       <view style='padding-left: 48rpx;'>
-        <view class='flex_col'>
-          <text class='text_primary'>{{title}}</text>
+        <view class='flex_col' style='position: relative;'>
+          <text class='text_primary ellipsis-2'>{{title}}</text>
           <view>
             <block wx:if='{{director !== ""}}'>
-              <text class='text_secondary'>导演：</text>
-              <text class='text_secondary'>{{director}}</text>
+              <text class='text_secondary' style='position: absolute;'>导演：</text>
+              <text class='text_secondary ellipsis-1' style='padding-left: 3em;'>{{director}}</text>
             </block>
           </view>
           <view>
@@ -37,14 +37,8 @@
           </view>
            <view>
             <block wx:if='{{genre !== ""}}'>
-              <text class='text_secondary'>分类：</text>
-              <text class='text_secondary'>{{genre}}</text>
-            </block>
-          </view>
-           <view>
-            <block wx:if='{{runtime !== ""}}'>
-              <text class='text_secondary'>时长：</text>
-              <text class='text_secondary'>{{runtime}}</text>
+              <text class='text_secondary' style='position: absolute;'>分类：</text>
+              <text class='text_secondary ellipsis-1' style='padding-left: 3em;'>{{genre}}</text>
             </block>
           </view>
         </view>
@@ -59,7 +53,7 @@
       <view class='container'>
         <block wx:for="{{playSource}}" wx:key="{{index}}">
           <view wx:if='{{index < playSource.length - 1}}'>
-            <view class='border-bottom_dash text-content playsource'>
+            <view class='border-bottom_dash text-content list-item'>
               <view class='playsource-icon icon-{{item.id}}'></view>
               <view class='flex_spacebetween'>
                 <text class='playsource-name'>{{playSourceName[item.id]}}</text>
@@ -68,7 +62,7 @@
             </view>
           </view>
           <view wx:else>
-            <view class='text-content playsource'>
+            <view class='text-content list-item'>
               <view class='playsource-icon icon-{{item.id}}'></view>
               <view class='flex_spacebetween '>
                 <text class='playsource-name'>{{playSourceName[item.id]}}</text>

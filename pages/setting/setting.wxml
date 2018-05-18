@@ -1,0 +1,11 @@
+<view style='height: 320rpx; background-color: #f0f3f5;'>
+  <view class='flex_col_center' style='height: 240rpx;'>
+    <view class='avatar' style='background-image: url({{userInfo.avatarUrl}})'></view>
+  </view>
+  <view class='text_center'>
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view class='container'>
+  
+</view>

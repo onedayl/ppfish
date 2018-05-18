@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class="flex_col_center" style="height: 600rpx;">
+    <image src='../../assets/xianyu2.jpg' mode="aspectFit" lazy-load="true" style="width: 240rpx; height: 240rpx;"></image>
+  </view>
+  <view class='text_center'>
+    <text class='text_secondary'>该功能需登录后使用哦~</text>
+  </view>
+  <view class='container'>
+    <button type='primary' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+  <text wx:else>请升级微信版本</text>
+  </view>
+</view>

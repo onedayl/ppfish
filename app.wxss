@@ -1,11 +1,12 @@
 @import "./libs/fa.wxss";
 
-page {
-  background-color: #f0f3f5;
-}
-
 .container {
   padding: 48rpx;
+}
+
+.flex_row_start {
+  display: flex;
+  align-items: center;
 }
 
 .flex_col_center {
@@ -43,6 +44,12 @@ page {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.list-item {
+  display: flex;
+  padding: 18rpx 0;
+  box-sizing: border-box;
 }
 
 .cover-wrap_big {
@@ -113,10 +120,30 @@ page {
   color: #333333;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .border-bottom_dash {
   border-bottom: 4rpx dashed #dddddd;
 }
 
 .price {
   color: #888888;
+}
+
+.ellipsis-1 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-2 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

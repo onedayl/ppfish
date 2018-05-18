@@ -1,0 +1,26 @@
+<view style='background-color: #f0f3f5; padding: 18rpx 28rpx;'>
+  <input placeholder='搜索' focus='true' disabled='{{disabled}}' value='{{inputValue}}' confirm-type='search' confirm-hold='true'  bindinput='handleInput' bindconfirm='handleConfirm' class='text_secondary' style='height: 68rpx; background-color: #ffffff; padding: 0 0.5em; text-align: center;' />
+</view>
+<view class='container'>
+  <block wx:if="{{movies.length !== 0}}">
+    <ul>
+      <li wx:for='{{movies}}' wx:key='{{item.id}}'>
+        <block wx:if='{{index < movies.length - 1}}'>
+          <view class='border-bottom_dash list-item' data-id='{{item.id}}' bindtap='navToSubject'>
+            <text>{{item.title}}<text class='text_secondary'>（{{item.year}}）</text></text>
+          </view>
+        </block>
+        <block wx:else>
+          <view class='list-item' data-id='{{item.id}}' bindtap='navToSubject'>
+            <text>{{item.title}}<text class='text_secondary'>（{{item.year}}）</text></text>
+          </view>
+        </block>
+      </li>
+    </ul>
+  </block>
+  <block wx:else>
+    <view class='flex_col_center'>
+      <text class='text_secondary'>{{hint}}</text>
+    </view>
+  </block>
+</view>

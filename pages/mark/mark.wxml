@@ -1,6 +1,6 @@
 <view class="container">
   <view class="flex_col_center" style="height: 800rpx;">
-    <image src='../../assets/xianyu.jpg' mode="aspectFit" lazy-load="true" style="width: 240rpx; height: 240rpx; margin-bottom: 40rpx;"></image>
+    <image src='../../assets/xianyu1.jpg' mode="aspectFit" lazy-load="true" style="width: 240rpx; height: 240rpx; margin-bottom: 40rpx;"></image>
     <view>
       <text>咸（闲）鱼（余）开发中……</text>
     </view>

@@ -1,5 +1,5 @@
 page {
-  background-color: #ffffff;
+  background-color: #f0f3f5;
 }
 
 .header {
@@ -31,12 +31,6 @@ page {
   color: #ffffff;
   font-size: 1.4em;
 } 
-
-.playsource {
-  display: flex;
-  padding: 18rpx 0;
-  box-sizing: border-box;
-}
 
 .playsource-icon {
   width: 64rpx;
@@ -74,6 +68,10 @@ page {
 
 .icon-7 {
   background-image: url('https://onedayl.com/playsource-7.png');
+}
+
+.icon-8 {
+  background-image: url('https://onedayl.com/playsource-8.png');
 }
 
 .playsource-name {

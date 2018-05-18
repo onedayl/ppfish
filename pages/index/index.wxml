@@ -1,9 +1,9 @@
 <view class="container">
   <view class="nav">
-    <text class="fa icon-star" bindtap='navToMark'></text>
-    <text class="fa icon-search" bindtap='navToMark'></text>
-    <text class="fa icon-bell-alt" bindtap='navToMark'></text>
-    <text class="fa icon-cog" bindtap='navToMark'></text>
+    <text class="fa icon-star" data-page="mark" bindtap='navToPage'></text>
+    <text class="fa icon-search" data-page="search" bindtap='navToPage'></text>
+    <text class="fa icon-bell-alt" data-page="mark" bindtap='navToPage'></text>
+    <text class="fa icon-cog" data-page="setting" bindtap='navToPage'></text>
   </view>
   <view class="flex_col_center" style="position: relative;">
     <swiper class="cover-wrap_big" bindanimationfinish="handleAnimationFinish">
