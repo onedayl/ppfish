@@ -74,6 +74,10 @@ page {
   background-image: url('https://onedayl.com/playsource-8.png');
 }
 
+.icon-9 {
+  background-image: url('https://onedayl.com/playsource-9.png');
+}
+
 .playsource-name {
   padding-left: 20rpx;
 }
